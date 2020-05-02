@@ -8,23 +8,17 @@
 
 .darth-vader, .joda, .luck {
     margin: 10px;
-    height: 50%;
-    width: 50%;
+    height: 70%;
+    width: 70%;
     border-radius: 10px;
-    perspective: 100px;
-    backface-visibility: hidden;
-}
-
-.images-div ul {
-    float: left;
 }
 
 .images-div li {
     list-style-type: none;
-    transition: .5s;
+    transition: .3s;
 }
 
 .images-div li:hover {
-    transition: .5s;
-    transform: perspective(200px) rotate3d(0,-360,0, -180deg);
+    transition: .3s;
+    transform: rotate3d(20, 10, 10, 15deg);
 }
