@@ -27,12 +27,3 @@ p {
     50% {transform: translateX(50%)}
     100% {transform: translateX(30%)}
 }
-
-.about-us, .contacts {
-    float: right;
-}
-
-.main {
-    float: left;
-    width: 70%
-}

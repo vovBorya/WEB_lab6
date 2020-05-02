@@ -1,0 +1,8 @@
+.main {
+    float: left;
+    width: 70%
+}
+
+.about-us, .contacts {
+    float: right;
+}
