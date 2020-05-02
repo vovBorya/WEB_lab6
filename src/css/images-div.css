@@ -1,0 +1,30 @@
+.images-div {
+    margin: 30px;
+    width: 20%;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 10px;
+}
+
+.darth-vader, .joda, .luck {
+    margin: 10px;
+    height: 50%;
+    width: 50%;
+    border-radius: 10px;
+    perspective: 100px;
+    backface-visibility: hidden;
+}
+
+.images-div ul {
+    float: left;
+}
+
+.images-div li {
+    list-style-type: none;
+    transition: .5s;
+}
+
+.images-div li:hover {
+    transition: .5s;
+    transform: perspective(200px) rotate3d(0,-360,0, -180deg);
+}

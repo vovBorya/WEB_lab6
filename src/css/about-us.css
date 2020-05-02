@@ -1,0 +1,38 @@
+.about-us {
+    margin: 30px;
+    padding: 40px;
+    width: 80%;
+    background-color: #444;
+    border-radius: 10px;
+}
+
+p {
+    font-size: 17px;
+}
+
+.about-us-label {
+    /*width: 100%;*/
+    font-size: 40px;
+    padding-left: 1rem;
+    animation: move-about-us 3s infinite ease;
+}
+
+.about-us-label:hover {
+    color: #00bc8c;
+    transition: .5s;
+}
+
+@keyframes move-about-us {
+    0% {transform: translateX(30%);}
+    50% {transform: translateX(50%)}
+    100% {transform: translateX(30%)}
+}
+
+.about-us, .contacts {
+    float: right;
+}
+
+.main {
+    float: left;
+    width: 70%
+}
