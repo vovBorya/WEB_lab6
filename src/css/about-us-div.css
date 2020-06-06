@@ -1,29 +1,41 @@
+/*блок "О нас"*/
 .about-us {
     margin: 30px;
     padding: 40px;
-    width: 80%;
+    width: 80%; /*Ширина для блока*/
     background-color: #444;
-    border-radius: 10px;
+    border-radius: 10px; /*Закруглённые края блока*/
 }
 
+/*Весь текст внутри блока "О нас"*/
 p {
     font-size: 17px;
 }
 
+/*Заголовок в блоке "О нас"*/
 .about-us-label {
-    /*width: 100%;*/
     font-size: 40px;
     padding-left: 1rem;
+
+    /*Назначение анимации
+    продолжительностью 3 секунды
+    с бесконечным повторением*/
     animation: move-about-us 3s infinite ease;
 }
 
+/*Плавное изменени цвета текста
+при наведении курсора на заголовок*/
 .about-us-label:hover {
     color: #00bc8c;
+
+    /*Скорость изменение цвета текста
+    другими словами: скорость изменения свойств елемента*/
     transition: .5s;
 }
 
+/*Основная анимация с движением заголовка в блоке*/
 @keyframes move-about-us {
-    0% {transform: translateX(30%);}
-    50% {transform: translateX(50%)}
-    100% {transform: translateX(30%)}
+    0% {transform: translateX(30%);} /*Начало движение в левой стороне*/
+    50% {transform: translateX(50%)} /*Движение в правую сторону */
+    100% {transform: translateX(30%)} /*Возвращение элемента влево*/
 }

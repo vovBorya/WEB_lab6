@@ -1,62 +1,78 @@
+/*Основные стили для шапки*/
 .header {
     padding: 30px;
-    width: 100%;
+    width: 100%; /*занять всю ширину окна*/
     font-size: 50px;
-    border-bottom: .1rem solid #747474;
+    border-bottom: .1rem solid #747474; /*Линия внизу, для визуального выдиления шапки*/
+
+    /*Свойста для центрирования элементов в шапке*/
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/*Элементы внутри шапки*/
 .header ul li {
-    display: inline;
-    list-style: none;
+    display: inline; /*Ориентация элементов списка горизонтально*/
+    list-style: none; /*убрать "точки" перед элементами списка*/
     margin: .5rem;
     padding: .5rem 1rem;
-    border-radius: 5px;
-    transition: .5s;
+    border-radius: 5px; /*закруглённые края элементов списка*/
+    transition: .5s; /*продолжительность перехода к данным свойствам*/
 }
 
+/*Изменени свойств при наведении курсора*/
 .header ul li:hover {
-    background-color: #444;
-    animation: shadow .5s ease-out;
+    background-color: #444; /*изменяется цвет фона*/
+    animation: shadow .5s ease-out; /*анимация с затемнением, продолжительностью 0.5 секунды*/
 }
 
+/*При наведении курсора на ссылки не будет отображаеться линия подчёркивания*/
 .header a:hover {
     text-decoration: none;
 }
 
+/*Название сайта*/
 .header .main-label a {
-    font-weight: bold;
+    font-weight: bold; /*текст выделен жирным*/
     font-size: 50px;
     color: white;
-    transition: .3s;
+    transition: .3s; /*Продолжительность перехода к данным свойствам*/
 }
 
+/*Смена цвета текста при наведении курсора на название сайта*/
 .header .main-label a:hover {
     color: #00bc8c;
-    animation: text-up .5s ease-out;
 }
 
+/*Свойства для картинки планеты*/
 .planet-img {
     margin-left: 30px;
     width: 80px;
     height: 80px;
+
+    /*Назначение анимации поворота
+    продолжительностью 3 секунды
+    с бесконечными повторениями*/
     animation: rotation 3s infinite;
 }
 
+/*Анимация с тенями для элементов списка в шапке*/
 @keyframes shadow {
-    from {text-shadow: 0 0 1px #EDF5E1;}
-    50% {text-shadow: 0 0 3px #EDF5E1;}
-    to {text-shadow: 0 0 1px #EDF5E1}
+    from {text-shadow: 0 0 1px #EDF5E1;} /*Начало анимации*/
+    50% {text-shadow: 0 0 3px #EDF5E1;} /*Середина анимации с тенью в 3 пикселя*/
+    to {text-shadow: 0 0 1px #EDF5E1} /*Конец анимации с тенями*/
 }
 
+/*Анимация поворота для картинки планеты*/
 @keyframes rotation {
-    from {transform: rotate(0deg)}
-    50% {transform: rotate(180deg)}
-    to {transform: rotate(350deg)}
+    from {transform: rotate(0deg)} /*Начало поворота при 0 градусов*/
+    50% {transform: rotate(180deg)} /*Середина поворота при 180*/
+    to {transform: rotate(350deg)} /*Конец поворота при 350*/
 }
 
+/*Размещение основного блока с информацией
+и блока с картинками в линию*/
 .main, .images-div {
     display: inline-block;
 }
